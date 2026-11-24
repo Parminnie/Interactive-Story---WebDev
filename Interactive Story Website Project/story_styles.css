@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+}
+
+/* Brings all content besides menu to the right by 200px, allowing it to NOT be covered by it */
+#content-blue {
+    /* width: 100%; */
+    /* margin-right: 0; */
+    margin-left: 200px;
+    display: grid; /* Makes the content all into one column and won't mess up the menu's placement -- maybe...*/
+    background: linear-gradient(to top left,
+        #c1dae6 0%,
+        #afced3 10%,
+        #93aec5 10%,
+        #9ec3d1 20%,
+        #7fb3c0 20%,
+        #819fc4 30%,
+        #6583bb 30%,
+        #5d76ac 40%,
+        #4879c2 40%,
+        #4764b4 50%
+    );
+}
+
+#content-blue-dark {
+    margin-left: 200px;
+    display: grid; /* Makes the content all into one column and won't mess up the menu's placement -- maybe...*/
+    background: linear-gradient(to top left,
+        #420f0f 0%,
+        #360a0a 10%,
+        #330d0d 10%,
+        #2c0c1f 20%,
+        #200a29 20%,
+        #21081e 30%,
+        #0f0d2e 30%,
+        #19132c 40%,
+        #0f1023 40%,
+        #0f092d 50%
+    );
+}
+
+#content-orange-purple {
+    margin-left: 200px;
+    display: grid; /* Makes the content all into one column and won't mess up the menu's placement -- maybe...*/
+    background: linear-gradient(to top left,
+        #2b0a53 0%,
+        #360a53 10%,
+        #480567 10%,
+        #510568 20%,
+        #51004e 20%,
+        #510031 30%,
+        #930000 30%,
+        #d53200 40%,
+        #d15000 40%,
+        #e77000 50%
+    );
+}
+
+#content-green {
+    margin-left: 200px;
+    display: grid; /* Makes the content all into one column and won't mess up the menu's placement -- maybe...*/
+    background: linear-gradient(to top left,
+        #c8e6c1 0%,
+        #cdd3af 10%,
+        #aec593 10%,
+        #aad19e 20%,
+        #9cc07f 20%,
+        #89c481 30%,
+        #84bb65 30%,
+        #74ac5d 40%,
+        #68ac41 40%,
+        #5b8a35 50%
+    );
+}
+
+#content-brown {
+    margin-left: 200px;
+    display: grid; /* Makes the content all into one column and won't mess up the menu's placement -- maybe...*/
+    background: linear-gradient(to top left,
+        #e6d5c1 0%,
+        #d3c3af 10%,
+        #c5ae93 10%,
+        #d1b79e 20%,
+        #c0a47f 20%,
+        #c4a781 30%,
+        #bb9965 30%,
+        #ac8a5d 40%,
+        #c28d48 40%,
+        #b48547 50%
+    );
+}
+
+#content-black {
+    margin-left: 200px;
+    display: grid; /* Makes the content all into one column and won't mess up the menu's placement -- maybe...*/
+    background: linear-gradient(to top left,
+        #550000 0%,
+        #550000 10%,
+        #4e0000 10%,
+        #490000 20%,
+        #460000 20%,
+        #460000 30%,
+        #350000 30%,
+        #330000 40%,
+        #1b0000 40%,
+        #000000 50%
+    );
+}
+
+#content-grey {
+    margin-left: 200px;
+    display: grid; /* Makes the content all into one column and won't mess up the menu's placement -- maybe...*/
+    background: linear-gradient(to top left,
+        #000000 0%,
+        #171717 10%,
+        #242424 10%,
+        #232323 20%,
+        #343434 20%,
+        #323232 30%,
+        #383838 30%,
+        #464646 40%,
+        #494949 40%,
+        #5f5f5f 50%
+    );
+}
+
+
+#header {
+    display: grid;
+    padding-bottom: 20px;
+    background: linear-gradient(#effaffd3, rgba(255, 255, 255, 0.534));
+    border-bottom: 3px solid #59a9cc;
+
+}
+
+/* Banner */
+#banner {
+    margin-top: 20px;
+    justify-self: center;
+    border: 4px solid white;
+    border-radius: 20px;
+    
+}
+
+/* Vertical menu of links to other pages */
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-right: 3px solid #7ec1de;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background: linear-gradient(#effaff, white);
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 14px 18px;
+    border-bottom: 3px solid #8bcfec;
+    font-family: "VT323", monospace;
+    font-size: 19px;
+    letter-spacing: 1px;
+    color: #64BBE0;
+}
+
+li a.active { /* Changes the BG color of the <a> with the active class */
+    background-color: #c3edff;
+    color: #59a9cc;
+}
+
+li a:hover:not(.active) { /* Changes the BG color of <a> on hover, as long as they DON'T have the active class */
+    background-color: #d0ffe5;
+}
+
+.main-content { /* Moving the content next to the menu so they're not being covered */
+    justify-self: center;
+    padding: 1px 35px;
+    font-family: "VT323", monospace;
+    letter-spacing: 1px;
+    font-size: 23px;
+    text-align: center;
+    width: 30em; /* Helps with the amount of space the text takes up */
+    line-height: 1.4;
+    color:#ffffff;
+    background-color: rgba(0, 25, 53, 0.429);
+    border-radius: 20px;
+    border: 6px solid rgb(255, 255, 255);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.559);
+}
+
+h1{
+    font-family: "VT323", sans-serif;
+    font-size: 90px;
+    font-weight: 500;
+    letter-spacing: 15px;
+    text-align: center;
+    line-height: 1;
+}
+
+h2{
+    font-family: "VT323", sans-serif;
+    font-size: 65px;
+    font-weight: 500;
+    letter-spacing: 15px;
+    text-align: center;
+    line-height: 1;
+    color: white;
+}
+
+.side-note{
+    justify-self: center;
+    padding: 1px 35px;
+    font-family: "VT323", monospace;
+    letter-spacing: 1px;
+    font-size: 23px;
+    text-align: center;
+    width: 30em; /* Helps with the amount of space the text takes up */
+    line-height: 1.3;
+    color: white;
+    font-style: italic;
+}
+
+#link-special{
+    color: rgb(46, 53, 146);
+    font-size: 30px;
+}
+
+#link-special:hover{
+    color: #d0ffe5;
+}
+
+.story_continue {
+    border: 3px solid #59a9cc;
+    background-color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: "VT323", monospace;
+    padding: 10px;
+    text-decoration: none;
+    color: #64BBE0;
+    
+}
+
+.links {
+    justify-self: center;
+}
+
+.story_continue:hover {
+    background-color:#d0ffe5;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.enlarge {
+    font-size: 30px;
+}
+
+h1 .cross-out {
+    text-decoration: line-through;
+    text-decoration-thickness: 6px;
+    font-size: 80px;
+}
+
+a img{
+    max-width: 250px;
+    height: auto;
+    border: 7px solid white;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    border-radius: 20px;
+}
+
+/* Image styles within story */
+#bear {
+    /* width: 100%; */
+    max-width: 200px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    border-radius: 20px;
+    float: right;
+    border: 7px solid white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#forest {
+    /* width: 100%; */
+    max-width: 300px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: left;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#forest-night {
+    /* width: 100%; */
+    max-width: 300px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: right;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#berries {
+    /* width: 50%; */
+    max-width: 200px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: left;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#leaves {
+    /* width: 50%; */
+    max-width: 500px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#shore {
+    /* width: 50%; */
+    max-width: 350px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: left;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+#drowning {
+    /* width: 50%; */
+    max-width: 500px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#biology{
+    max-width: 350px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: right;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#cow{
+    max-width: 250px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: left;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+#clock{
+    max-width: 200px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: left;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px; 
+}
+
+#sunset-buildings{
+    max-width: 300px;
+    height: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.301);
+    float: left;
+    border: 7px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+/* Footer style */
+#footer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    background: linear-gradient(#effaff9d, rgba(255, 255, 255, 0.897));
+    border-top: 3px solid #59a9cc;
+    font-family: "VT323", monospace;
+    letter-spacing: 1px;
+    font-size: 23px;
+    padding: 10px;
+}
+
+/* Image gallery within home page */
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    /* margin-top: 60px; */
+}
+
+/* Logo WITHIN the footer */
+#logo {
+    width: 110px;
+    height: 110px;
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    justify-self: end;
+    padding-right: 15px;
+}
+
+/* The placement of the texts in the footer */
+.second-row {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.first-row {
+    grid-row: 1;
+    grid-column: 1;
+}
